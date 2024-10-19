@@ -69,7 +69,7 @@ export const ProjectTwelve = () => {
   };
 
   const fetchData = async () => {
-    await setWeather(
+    setWeather(
       await axios
         .get(`${baseUrl}/current.json`, {
           params: {
