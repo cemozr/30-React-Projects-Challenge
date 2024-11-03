@@ -19,6 +19,9 @@ import { ProjectFifteen } from "./ProjectFifteen/ProjectFifteen";
 import { ThemeContextProvider } from "./ProjectFifteen/ThemeContext";
 import { ProjectSixteen } from "./ProjectSixteen/ProjectSixteen";
 import { ProjectSeventeen } from "./ProjectSeventeen/ProjectSeventeen";
+import { ProjectEighteen } from "./ProjectEighteen/ProjectEighteen";
+import { Provider } from "react-redux";
+import { store } from "./ProjectEighteen/store";
 
 function App() {
   return (
@@ -43,7 +46,10 @@ function App() {
       </ThemeContextProvider> */}
       {/*--------------------------------------- */}
       {/* <ProjectSixteen /> */}
-      <ProjectSeventeen />
+      {/* <ProjectSeventeen /> */}
+      <Provider store={store}>
+        <ProjectEighteen />
+      </Provider>
     </>
   );
 }
