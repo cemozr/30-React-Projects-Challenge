@@ -21,7 +21,8 @@ import { ProjectSixteen } from "./ProjectSixteen/ProjectSixteen";
 import { ProjectSeventeen } from "./ProjectSeventeen/ProjectSeventeen";
 import { ProjectEighteen } from "./ProjectEighteen/ProjectEighteen";
 import { Provider } from "react-redux";
-import { store } from "./ProjectEighteen/store";
+import { store } from "./store";
+import { ProjectNineteen } from "./ProjectNineteen/ProjectNineteen";
 
 function App() {
   return (
@@ -47,8 +48,11 @@ function App() {
       {/*--------------------------------------- */}
       {/* <ProjectSixteen /> */}
       {/* <ProjectSeventeen /> */}
-      <Provider store={store}>
+      {/* <Provider store={store}>
         <ProjectEighteen />
+      </Provider> */}
+      <Provider store={store}>
+        <ProjectNineteen />
       </Provider>
     </>
   );
