@@ -16,4 +16,4 @@
 16- Switch light and dark theme
 17- Shopping cart
 18- Counter with RTK
-19-
+19- To do app with RTK
